@@ -1,12 +1,5 @@
 from django.shortcuts import render
-<<<<<<< HEAD
 from django.views.generic import TemplateView
-
-Importamos
-la
-vista
-genérica
-FormView
 from django.views.generic.edit import FormView
 from django.http.response import HttpResponseRedirect
 from django.core.urlresolvers import reverse_lazy
