@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Repositorio.login',
+    'login',
 ]
 
 MIDDLEWARE = [
@@ -124,8 +124,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-
-from django.urls import reverse
-LOGIN_URL = reverse('login')
-LOGIN_REDIRECT_URL = reverse('menu')
-LOGOUT_URL = reverse('logout')
