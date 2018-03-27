@@ -15,12 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-#from django.conf.urls import include, url
-from django.contrib import admin
-
-urlpatterns= [
-    url(r'^admin/', admin.site.urls),
-]
 
 
+urlpatterns = [
+    # Vista para pagina de inicio
 
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^login/', include('login.urls')),
+  ]
